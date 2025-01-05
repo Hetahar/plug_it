@@ -111,6 +111,7 @@ The Swagger UI for API documentation is available at: [https://plugit-backend.on
 
 #### More
 - [Open Charge Map](https://openchargemap.org/site) (API)
+ 
 
 ### 🔧 Installation
 
@@ -156,7 +157,7 @@ VITE_REACT_MAPBOX_USERNAME=<YOUR_VITE_REACT_MAPBOX_USERNAME>
 VITE_REACT_MAPBOX_TOKEN=<YOUR_VITE_REACT_MAPBOX_TOKEN>
 VITE_REACT_MAPBOX_STYLE_ID=<YOUR_VITE_REACT_MAPBOX_STYLE_ID>
 ```
-**Notes**: Replace placeholder values ``(<YOUR_VALUE>)`` with your actual credentials.
+**Note**: Replace placeholder values ``(<YOUR_VALUE>)`` with your actual credentials.
 
 4. Start the development server in both the client and server terminal:
 ```
