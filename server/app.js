@@ -35,6 +35,12 @@ app.use(
     customCssUrl: '/swagger.css',
     customfavIcon: '/pin_icon.png',
   })
+  // helmet.contentSecurityPolicy({
+  //   directives: {
+  //     defaultSrc: ["'self'"],
+  //     connectSrc: ["'self'", "http://localhost:4000"], // Allow API calls to localhost:4000
+  //   },
+  // })
 );
 
 app.get('/', (req, res) => res.send('API Running!'));

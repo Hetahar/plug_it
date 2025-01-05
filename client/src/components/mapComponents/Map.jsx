@@ -11,7 +11,6 @@ import MapEventHandler from "./mapHooks/MapEventHandler";
 import FetchStations from "./mapUtils/FetchStations";
 import CustomMarker from "./components/CustomMarker";
 import InfoBox from "./components/InfoBoxV3";
-import FilterButtons from "./FilterButtons";
 import MapButtons from "./components/MapButtons";
 import { useBookMark } from "./mapHooks/useBookMark";
 import { useLocation } from "react-router-dom";
@@ -88,8 +87,6 @@ const Map = ({ minimap = false }) => {
 
   return (
     <div className={`relative w-full ${mapHeight}`}>
-      {/* Display filter buttons if the map is not a minimap */}
-      {!minimap && <FilterButtons customSearch={customSearch}/>}
       {/* Map container */}
       <MapContainer
         center={INITIAL_POSITION}

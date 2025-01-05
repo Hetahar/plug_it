@@ -2,11 +2,9 @@ import React, { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Search from "../../assets/images/search.png";
 import Map from "../mapComponents/Map";
-import { useFilterData } from "../../../routes/FilterDataContext";
 
 function HeroMap() {
   const navigate = useNavigate();
-  const { providers, locations } = useFilterData();
 
   const [searchSuggestions, setSearchSuggestions] = useState([]);
   const searchInputRef = useRef(null);

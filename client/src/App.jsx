@@ -19,7 +19,6 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import AboutUs from "./components/aboutUsComponents/AboutUs";
 import ContactUs from "./components/contactComponents/ContactUs";
 import Legal from "./components/legalComponents/Legal";
-import { FilterDataProvider } from "../routes/FilterDataContext";
 import Footer from "./components/footerComponents/Footer";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminContactForms from "./components/contactComponents/AdminContactForms";
@@ -34,7 +33,6 @@ function App() {
           clientId={import.meta.env.VITE_REACT_APP_GOOGLE_CLIENT_ID}
         >
           <AuthProvider>
-            <FilterDataProvider>
               <Routes>
                 <Route path="/" element={<Layout />}>
                   <Route
@@ -74,7 +72,6 @@ function App() {
                   <Route path="registration" element={<Register />} />
                 </Route>
               </Routes>
-            </FilterDataProvider>
           </AuthProvider>
         </GoogleOAuthProvider>
       </BrowserRouter>

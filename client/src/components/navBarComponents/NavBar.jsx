@@ -7,11 +7,9 @@ import Search from "../../assets/images/search.png";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../../routes/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useFilterData } from "../../../routes/FilterDataContext";
 
 function NavBar() {
   const { user, logOut } = useAuth();
-  const { providers, locations } = useFilterData();
   const navigate = useNavigate();
   const location = useLocation();
   const searchInputRef = useRef(null);
